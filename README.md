@@ -5,7 +5,7 @@ Add sleep(), usleep() to Node.js, via a C/C++ addons with N-API. implementation 
 ## Install using NPM
 
 ```
-npm install system-sleep -S
+npm install easy-sleep -S
 ```
 
 ## Usage
