@@ -1,0 +1,4 @@
+node_modules
+build
+build-tmp-napi-v3
+lib

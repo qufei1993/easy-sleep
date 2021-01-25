@@ -1,0 +1,49 @@
+{
+  "name": "easy-sleep",
+  "version": "1.0.0",
+  "description": "Implement sleep for Node.js",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "lint": "eslint ./*.js",
+    "install": "node-pre-gyp install --fallback-to-build",
+    "package": "node-pre-gyp package",
+    "test": "npm install --build-from-source && mocha test/*.test.js"
+  },
+  "keywords": [
+    "sleep",
+    "async sleep",
+    "thread sleep",
+    "thread wait",
+    "setTimeout Promise"
+  ],
+  "author": "五月君",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.0-alpha1",
+    "node-pre-gyp": "^0.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "mocha": "^8.2.1"
+  },
+  "binary": {
+    "module_name": "easy-sleep",
+    "module_path": "./lib/binding/napi-v{napi_build_version}",
+    "package_name": "{module_name}-v{version}-napi-v{napi_build_version}-{platform}.tar.gz",
+    "host": "https://github.com",
+    "remote_path": "qufei1993/easy-sleep/releases/download/v{version}",
+    "napi_versions": [
+      3
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qufei1993/easy-sleep.git"
+  },
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/qufei1993/easy-sleep/issues"
+  },
+  "homepage": "https://github.com/qufei1993/easy-sleep#readme"
+}
