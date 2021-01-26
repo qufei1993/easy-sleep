@@ -9,7 +9,7 @@ declare module 'easy-sleep' {
   /**
    * Thread sleep
    */
-  export class SThread {
+  export class Thread {
     /**
      * Sleep in miliseconds
      * @param {Number} miliseconds
