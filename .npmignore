@@ -1,3 +1,5 @@
 test/
 .github/
 package-lock.json
+build-tmp-napi-v3
+lib
