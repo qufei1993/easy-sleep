@@ -28,7 +28,7 @@ async function test() {
 
 true event-loop blocking sleep. use caution in the main thread.
 
-* Thread.sleep(n): sleep for n miliseconds
+* Thread.sleep(n): sleep for n milliseconds
 * Thread.usleep(n): sleep for n microseconds (1 second is 1000000 microseconds)
 * Thread.wait(n): implementation based on Atomics.wait (Support Node.js v8.10.0+)
 
