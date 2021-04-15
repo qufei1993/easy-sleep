@@ -6,6 +6,6 @@
  */
 int os_usleep(unsigned int microseconds) {
   unsigned int miliseconds = microseconds / 1000;
-  Sleep(microseconds);
+  Sleep(miliseconds);
   return 0;
 }
